@@ -3,9 +3,14 @@
  * Obtiene el ID del producto desde la URL.
  * @returns {string} El ID del producto obtenido de la URL.
  */
-function obtenerIdProducto() {
+function getIdProducto() {
     const params = new URLSearchParams(window.location.search);
     return params.get('id');
+}
+
+function getPrecioProducto() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('precio');
 }
 
 /**
@@ -13,7 +18,7 @@ function obtenerIdProducto() {
  * Recupera el producto desde el LocalStorage y muestra su información en la página.
  */
 function mostrarDetallesProducto() {
-    const idProducto = obtenerIdProducto();
+    const idProducto = getIdProducto();
     const productos = JSON.parse(localStorage.getItem('productos')) || [];
 
     const producto = productos.find(p => p.id == idProducto);
