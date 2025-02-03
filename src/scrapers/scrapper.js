@@ -128,7 +128,6 @@ async function scrappearAmazon(producto) {
       );
     });
 
-    // Guardar resultados en un archivo JSON (opcional)
     fs.writeFileSync('data/productos.json', JSON.stringify(productos, null, 2), 'utf-8');
     console.log('Productos guardados en "data/productos.json".');
 

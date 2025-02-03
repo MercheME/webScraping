@@ -92,7 +92,7 @@ function guardarProductoLocalStorage(producto) {
 
     productos.push(producto);
 
-    // Guardar los productos en el LocalStorage
+    // Guarda los productos en el LocalStorage
     localStorage.setItem('productos', JSON.stringify(productos));
     alert("✅ Producto guardado en favoritos.");
 }

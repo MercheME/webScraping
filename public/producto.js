@@ -67,5 +67,5 @@ function mostrarDetallesProducto() {
 }
 
 
-// Llama a la función para mostrar los detalles del producto al cargar la página.
+// Llamar a la función para mostrar los detalles del producto al cargar la pag
 mostrarDetallesProducto();
